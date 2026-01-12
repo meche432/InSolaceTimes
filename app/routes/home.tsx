@@ -7,45 +7,48 @@ export const meta: MetaFunction = () => [
 
 export default function Home() {
   return (
-    <section className="mx-auto max-w-5xl px-6 py-14">
-      <div className="flex flex-col gap-4">
-        <p className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400">
-          In Solace Times
-        </p>
-        <h1 className="text-4xl font-semibold tracking-tight">
-          Transform events into experiences.
-        </h1>
-        <p className="mt-2 max-w-2xl text-gray-700 dark:text-gray-200">
-          This is your new homepage. Edit{" "}
-          <code className="rounded bg-black/5 px-2 py-1 dark:bg-white/10">
-            app/routes/home.tsx
-          </code>{" "}
-          to build it out.
-        </p>
-      </div>
+    <section className="hero">
+	<div className="container hero-grid">
+		<div className="stack">
+			<p className="kicker">In Solace Times</p>
+			<h1 className="h1">Transform events into experiences.</h1>
+			<p className="lede">
+				A clean starting point. This is just CSS you control.
+			</p>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
-        <div className="rounded-2xl border border-gray-200 p-6 dark:border-gray-800">
-          <h2 className="font-semibold">What you do</h2>
-          <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-            Add your services: planning, production, photo/video, whatever the
-            package actually includes.
-          </p>
-        </div>
-        <div className="rounded-2xl border border-gray-200 p-6 dark:border-gray-800">
-          <h2 className="font-semibold">Why you</h2>
-          <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-            Put your differentiator here. No fluff, no “bespoke”, just the real
-            reason someone should pick you.
-          </p>
-        </div>
-        <div className="rounded-2xl border border-gray-200 p-6 dark:border-gray-800">
-          <h2 className="font-semibold">Next step</h2>
-          <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-            Link to Contact, a booking form, or a calendar once you add it.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-}
+			<div className="hero-actions">
+				<a className="btn btn-primary" href="/contact">Book a consult</a>
+				<a className="btn btn-ghost" href="/about">Learn more</a>
+			</div>
+		</div>
+
+		<div className="hero-box stack">
+			<p className="card-title">Quick notes</p>
+			<p className="card-text">
+				Edit <code>app/routes/home.tsx</code> to change this page.
+			</p>
+			<p className="card-text">
+				Add pages in <code>app/routes.ts</code>.
+			</p>
+		</div>
+	</div>
+
+	<div className="container">
+		<div className="grid-3">
+			<div className="card">
+				<div className="card-title">Planning</div>
+				<div className="card-text">Concept, logistics, timeline.</div>
+			</div>
+			<div className="card">
+				<div className="card-title">Production</div>
+				<div className="card-text">Vendors, setup, coordination.</div>
+			</div>
+			<div className="card">
+				<div className="card-title">Story</div>
+				<div className="card-text">Photo/video that actually feels like you.</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+   
